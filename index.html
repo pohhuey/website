@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马来西亚旅游指南</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+        <nav class="main-header">
+            <div class="logo">
+                <a href="/">
+                    <img src="images/logo.png" alt="马来西亚旅游指南" class="logo-img">
+                    <span>马来西亚旅游指南</span>
+                </a>
+            </div>
+            <ul class="main-nav">
+                <li><a href="destinations.html"><i class="fas fa-map-marker-alt"></i> 目的地</a></li>
+                <li><a href="activities.html"><i class="fas fa-hiking"></i> 活动</a></li>
+                <li><a href="info.html"><i class="fas fa-info-circle"></i> 实用信息</a></li>
+                <li><a href="guides.html"><i class="fas fa-book"></i> 旅行攻略</a></li>
+                <li><a href="blog.html"><i class="fas fa-blog"></i> 博客</a></li>
+                <li><a href="about.html"><i class="fas fa-users"></i> 关于我们</a></li>
+            </ul>
+            <div class="user-nav">
+                <a href="login.html" class="btn-login"><i class="fas fa-user"></i> 登入</a>
+                <a href="register.html" class="btn-register"><i class="fas fa-user-plus"></i> 注册</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="animate__animated animate__fadeIn">探索马来西亚的魅力</h1>
+                <p class="animate__animated animate__fadeIn animate__delay-1s">从现代都市到自然奇观，体验多元文化的精彩</p>
+                <div class="search-box animate__animated animate__fadeIn animate__delay-2s">
+                    <div class="search-wrapper">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" placeholder="搜索目的地、活动或住宿">
+                        <button class="search-btn">搜索</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <section class="featured-destinations">
+            <h2>精选目的地</h2>
+            <div class="destination-grid">
+                <article class="destination-card">
+                    <div class="card-image-wrapper">
+                        <img src="https://i.pinimg.com/originals/96/5f/36/965f36f40e57da846363af4507a22c8d.jpg" alt="吉隆坡双子塔黄昏美景">
+                        <div class="card-overlay">
+                            <span class="location-tag"><i class="fas fa-map-marker-alt"></i> 马来西亚</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>吉隆坡</h3>
+                        <p>现代都市与传统文化的完美融合，尽览标志性的双子塔与城市天际线</p>
+                        <div class="card-footer">
+                            <a href="destinations.html#kl" class="btn-more">
+                                了解更多 <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="card-stats">
+                                <span><i class="fas fa-heart"></i> 4.8</span>
+                                <span><i class="fas fa-comment"></i> 128</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1524586410818-196d249560e4?q=80&w=1776&auto=format&fit=crop" alt="檳城喬治市街景">
+                    <h3>檳城</h3>
+                    <p>美食天堂與世界文化遺產，體驗多元文化交融的魅力</p>
+                    <a href="/destinations/penang" class="btn-more">了解更多</a>
+                </article>
+                <article class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1625379494341-99b5ee7d5c1d?q=80&w=1776&auto=format&fit=crop" alt="蘭卡威老鷹廣場">
+                    <h3>蘭卡威</h3>
+                    <p>熱帶天堂與海島度假勝地，享受陽光與海灘的完美假期</p>
+                    <a href="/destinations/langkawi" class="btn-more">了解更多</a>
+                </article>
+                <article class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1567961014706-6df6153bb9c6?q=80&w=1776&auto=format&fit=crop" alt="馬六甲紅屋廣場">
+                    <h3>馬六甲</h3>
+                    <p>古城風韻與歷史遺跡，漫步在充滿荷蘭殖民地風情的街道</p>
+                    <a href="/destinations/malacca" class="btn-more">了解更多</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="latest-offers">
+            <h2>最新活动和优惠</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-tag">限时优惠</div>
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1740&auto=format&fit=crop" alt="吉隆坡五星级酒店">
+                    <div class="offer-content">
+                        <h3>吉隆坡五星级酒店特惠</h3>
+                        <p>预订即享7折优惠，含双人早餐</p>
+                        <p class="offer-date">有效期至：2024/6/30</p>
+                        <a href="/offers/hotel-deal" class="btn-offer">立即预订</a>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-tag">热门活动</div>
+                    <img src="https://images.unsplash.com/photo-1569288063643-5d5369c4fbad?q=80&w=1742&auto=format&fit=crop" alt="檳城地道美食">
+                    <div class="offer-content">
+                        <h3>檳城美食文化之旅</h3>
+                        <p>跟随当地导游探索地道美食</p>
+                        <p class="offer-date">每週六日出發</p>
+                        <a href="/offers/food-tour" class="btn-offer">查看詳情</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="user-reviews">
+            <h2>旅客评价</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1740&auto=format&fit=crop" alt="用户头像" class="review-avatar">
+                        <div class="review-info">
+                            <h4>陈小姐</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="rating-score">5.0</span>
+                            </div>
+                        </div>
+                        <div class="review-verify">
+                            <i class="fas fa-check-circle"></i> 已验证
+                        </div>
+                    </div>
+                    <p class="review-text">「在兰卡威度过了完美的假期，海滩干净美丽，服务非常贴心。特别推荐日落时分的海滩漫步，风景令人陶醉。」</p>
+                    <div class="review-footer">
+                        <p class="review-date"><i class="far fa-calendar-alt"></i> 2024年3月访问</p>
+                        <div class="review-actions">
+                            <button class="btn-helpful"><i class="far fa-thumbs-up"></i> 有帮助 (24)</button>
+                            <button class="btn-share"><i class="far fa-share-square"></i> 分享</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1740&auto=format&fit=crop" alt="用户头像" class="review-avatar">
+                        <div class="review-info">
+                            <h4>林先生</h4>
+                            <div class="rating">★★★★☆</div>
+                        </div>
+                    </div>
+                    <p class="review-text">「檳城的街頭藝術和美食讓人印象深刻，強烈推薦！」</p>
+                    <p class="review-date">2024年2月訪問</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="travel-tips">
+            <h2>旅行小贴士</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <i class="icon-weather"></i>
+                    <h3>最佳旅游季节</h3>
+                    <p>11月至次年3月是马来西亚的最佳旅游时节，天气较为乾爽。</p>
+                </div>
+                <div class="tip-card">
+                    <i class="icon-currency"></i>
+                    <h3>货币兑换</h3>
+                    <p>建议在主要城市的授权兑换商处更换马币，汇率较好。</p>
+                </div>
+                <div class="tip-card">
+                    <i class="icon-transport"></i>
+                    <h3>交通建议</h3>
+                    <p>大城市建议使用地铁和轻轨，既方便又能避开拥堵。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>关于我们</h4>
+                <ul>
+                    <li><a href="about.html">网站简介</a></li>
+                    <li><a href="about.html#team">团队介绍</a></li>
+                    <li><a href="about.html#contact">联系我们</a></li>
+                    <li><a href="about.html#partners">合作伙伴</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>实用信息</h4>
+                <ul>
+                    <li><a href="info.html#visa">签证信息</a></li>
+                    <li><a href="info.html#transport">交通指南</a></li>
+                    <li><a href="info.html#weather">天气信息</a></li>
+                    <li><a href="info.html#safety">安全提示</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>关注我们</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="icon-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="icon-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="icon-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="icon-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>订阅电子报</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="输入您的电子邮箱">
+                    <button type="submit">订阅</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 马来西亚旅游指南. 保留所有权利</p>
+            <div class="footer-links">
+                <a href="/privacy">隐私政策</a>
+                <a href="/terms">使用条款</a>
+                <a href="/sitemap">网站地图</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
