@@ -1,0 +1,243 @@
+/* 全局布局优化 */
+:root {
+    --max-width: 1200px;
+    --section-spacing: 80px;
+    --card-spacing: 24px;
+    --grid-gap: 30px;
+}
+
+body {
+    margin: 0;
+    padding-top: 70px; /* 为固定导航栏留出空间 */
+}
+
+/* 容器布局 */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 区块间距优化 */
+section {
+    margin-bottom: var(--section-spacing);
+    padding: 40px 0;
+}
+
+/* 网格布局优化 */
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--grid-gap);
+    padding: 0 20px;
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--grid-gap);
+    padding: 0 20px;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--grid-gap);
+    padding: 0 20px;
+}
+
+/* 卡片布局优化 */
+.destination-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+
+.card-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-footer {
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+/* 标题样式统一 */
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: 15px;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--secondary-color);
+}
+
+/* 页脚布局优化 */
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 响应式布局优化 */
+@media (max-width: 1200px) {
+    :root {
+        --section-spacing: 60px;
+        --grid-gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --section-spacing: 40px;
+        --grid-gap: 15px;
+    }
+    
+    section {
+        padding: 30px 0;
+    }
+    
+    section h2 {
+        font-size: 1.75rem;
+        margin-bottom: 30px;
+    }
+}
+
+/* 导航栏布局优化 */
+.main-header {
+    padding: 0 20px;
+    height: 70px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.user-nav {
+    display: flex;
+    gap: 15px;
+}
+
+/* 搜索框布局优化 */
+.search-box {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* 评论区布局优化 */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--grid-gap);
+    padding: 0 20px;
+}
+
+.review-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 优化间距和对齐 */
+.card-stats {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.tip-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.tip-list li:last-child {
+    border-bottom: none;
+}
+
+/* 添加动画过渡效果 */
+.destination-card,
+.offer-card,
+.review-card,
+.tip-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 优化表单元素 */
+input, 
+textarea, 
+button {
+    font-family: inherit;
+}
+
+/* 图片容器优化 */
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/* 添加响应式typography */
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/* 优化链接样式 */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+/* 优化按钮组样式 */
+.button-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* 添加内容区块间距 */
+.content-section {
+    margin-bottom: 40px;
+}
+
+.content-section:last-child {
+    margin-bottom: 0;
+} 
